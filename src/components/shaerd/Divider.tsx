@@ -1,0 +1,9 @@
+
+
+const Dvider = () => {
+  return (
+    <div className=" border-b border-gray-100 w-full my-4"/>
+  )
+}
+
+export default Dvider
