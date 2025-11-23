@@ -4,9 +4,9 @@ import Dvider from "./shaerd/Divider";
 const DomainPage = () => {
   const card = [
     {
-      domainName: "AiItalia.com",
+      domainName: "CorporateJanitorial.com",
       price: "1234",
-      link: "AiItalia.com",
+      link: "/CorporateJanitorial",
     },
     {
       domainName: "YourIsing.com",

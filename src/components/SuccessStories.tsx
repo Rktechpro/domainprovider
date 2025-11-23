@@ -46,26 +46,28 @@ const SuccessStories = () => {
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {TerminolgyCard.map((item) => (
-          <Card image={item.image}>
-            <div className="px-6 py-6 text-center">
-              <p className="text-slate-700 leading-relaxed mb-4">
-                {item.label}
-              </p>
-              <Link
-                to={item.link}
-                className="text-blue-600 font-medium hover:underline"
-              >
-                Read the story.
-              </Link>
-              <div className="mt-10">
-                <img
-                  src={item.brand}
-                  className="px-28 text-center text-xl font-semibold text-slate-800"
-                />
+        {TerminolgyCard.map((item, index) => (
+          <div key={index}>
+            <Card image={item.image}>
+              <div className="px-6 py-6 text-center">
+                <p className="text-slate-700 leading-relaxed mb-4">
+                  {item.label}
+                </p>
+                <Link
+                  to={item.link}
+                  className="text-blue-600 font-medium hover:underline"
+                >
+                  Read the story.
+                </Link>
+                <div className="mt-10">
+                  <img
+                    src={item.brand}
+                    className="px-28 text-center text-xl font-semibold text-slate-800"
+                  />
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </div>
         ))}
       </div>
     </div>
