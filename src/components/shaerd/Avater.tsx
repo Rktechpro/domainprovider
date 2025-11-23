@@ -27,8 +27,8 @@ const Avater: FC<AvaterInterFace> = ({
           onClick={onClick}
           src={image}
           className={`${
-            size === "lg" ? "h-12 w-12" : "w-8 h-8"
-          } rouneded-full object-cover`}
+            size === "lg" ? "h-12 w-12" : "w-9 h-9"
+          } object-cover border rounded-full`}
         />
       )}
       {title && subtitle && (
